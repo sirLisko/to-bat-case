@@ -1,13 +1,16 @@
 const dictionary = require('./dictionary')
 
-module.exports = (str) => {
+module.exports = (str, reverse = true) => {
   if (typeof str !== 'string') {
     throw new TypeError('Expected a string')
   }
 
-  return str
+  const upSideDown = str
     .split('')
     .map(ch => dictionary[ch] || dictionary[ch.toLowerCase()] || ch)
-    .reverse()
-    .join('')
+
+  return (reverse
+    ? upSideDown.reverse()
+    : upSideDown
+  ).join('')
 }
