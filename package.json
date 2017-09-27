@@ -1,6 +1,6 @@
 {
   "name": "to-bat-case",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Convert a string to bat case.",
   "main": "index.js",
   "scripts": {
@@ -39,6 +39,6 @@
     "tape": "^4.8.0"
   },
   "engines": {
-    "node": ">=6"
+    "node": ">=4"
   }
 }

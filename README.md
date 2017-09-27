@@ -30,7 +30,7 @@ toBatCase('Bat_Case!', false)
 
 ## API
 
-### toBatCase(input, [revert])
+### toBatCase(input, [noRevert])
 
 Returns the `input` converted to bat case.
 
@@ -38,11 +38,11 @@ Returns the `input` converted to bat case.
 
 Type: `string`
 
-#### revert
+#### noRevert
 
 Type: `bool`
 
-Default: `true`
+Default: `false`
 
 ## Inspired by
 
